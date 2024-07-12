@@ -1,0 +1,60 @@
+.gaming-library-card{
+    flex: 1 1 100%;
+
+}
+
+.gaming-library-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-primary);
+    padding: 25px;
+}
+
+.gaming-library-card h4 {
+    font-size: 1rem;
+}
+
+.main-button a{
+    display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;}
+
+.main-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.75s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%) scale(0);  }
+
+    .main-button a:hover::before {
+        transform: translate(-50%, -50%) scale(1);
+
+     }
+
+    .main-button:hover a {
+        background-color: #0056b3;
+        transform: translateY(-5px);
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+        color: white;
+     }
+    .main-button a {
+        position: relative;
+        z-index: 1;
+     }
